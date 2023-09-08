@@ -1,0 +1,241 @@
+@import url("https://fonts.goggleapis.com/css2?family=Libre+Franklin:ital,wght@1,500;1,600&family=montserrat:wght@600;700&display=swap");
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-family: "Montserrat",sans-serif;
+
+}
+::selection{
+    background-color : black;
+}
+
+body{
+    background-color: rgb(56, 55, 55);
+  
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(slider-bg.png);
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+    nav{
+        width: 100%;
+        height: 15vh;
+        background-color: rgb(49, 45, 45);
+        display: flex;
+        padding: 2% 5%;
+        /* top: 0; */
+        /* position: fixed; */
+
+    }
+nav img{
+    width: 42px;
+    height: 34px;
+
+}
+nav ul{
+    text-align: right;
+    flex: 1;
+
+}
+nav ul li{
+    display: inline-block;
+    padding: 10px 15px;
+}
+nav ul li a{
+    color: white;
+    font-size: 14px;
+
+}
+nav ul li a:hover{
+    color: rgb(153, 104, 41);
+}
+nav ul li a::after{
+    content:"" ;
+    width: 0;
+    height: 2px;
+    background-color: rgb(215, 165, 100);
+    transition: 0.8s;
+    display: block;
+
+
+} 
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 16%;
+    padding-left: 50px;
+}
+.text{
+    color:rgb(234, 223, 8);
+    position: relative;
+    font: 100px;
+    font-weight: 600;
+    font-size: 60px;
+    padding-left: 430px
+
+}
+.first-text{
+    color: white;
+   padding-left: 600px;
+}
+.sec-text{
+    padding-left: 600px;
+}
+.sec-text::before{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 100%;
+    background-color: rgb(41, 39, 39);
+    border-left: 2px solid yellow;
+    position: absolute;
+    animation: animate 6s steps(20) infinite;
+
+}
+@keyframes animate{
+    40%,60%{
+        left: calc(100% + 5px);
+    }
+    100%{
+        left: 0;
+    }
+}
+button{
+    margin-top: 5%;
+    padding: 12px 40px;
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 5px;
+    font-weight: bold;
+    background: linear-gradient(160deg, #ffc107 40%, rgb(19, 19, 19) 60%);
+}
+.home-btn{
+    margin-left: 650px;
+    margin-bottom: 5px;
+}
+section{
+    padding-top: 0%;
+}
+.about{
+display: flex;
+/* flex-wrap: wrap; */
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100vh;
+padding: 10%;
+}
+/* .about-left-side{
+    margin-top: 5%;
+} */
+.about-left-side img{
+    width: 369px;
+    height: 413px;
+    
+}
+.about-right-side{
+    padding: 5% 5%;
+}
+.about-right-side h1{
+    padding-top: 120px;
+    color: #ffc107;
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: bolder !important;
+}
+.about-right-side p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    padding-top: 20px;
+    color: rgb(171, 193, 193);
+}
+about-btn{
+    margin-left:70px;
+}
+.head-text{
+    padding-top: 10%;
+    color: #ffc107;
+    text-align: center;
+    font-size:36px;
+    padding-bottom: 50px;
+
+}
+.services{
+    display: flex;
+    /* flex-wrap:wrap;  */
+    justify-content: center;
+    align-items: center;
+    margin:40px;
+}
+.services-cards{
+    margin-right: 10px;
+    margin-bottom: 80px;
+    padding: 40px;
+    background: black;
+
+}
+.services-cards i{
+color: #ffc107;
+font-size: 40px;
+
+}
+.services-cards h3{
+    padding: 30px 0;
+    font-size: 20px;
+    color: azure;
+}
+.services-cards p{
+    line-height: 1.9;
+    color: aliceblue;
+
+}
+.COUNTER{
+    width: 100%;
+    height: 60vh;
+    background-image: url(some-facts-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 0 13rem;
+    padding: 7rem 0;
+    color: white;
+}
+.s1 i{
+font-size: 40px;
+color: #ffc107;
+
+}
+.s1 h1{
+    padding: 30px 0;
+    font-size: 2.2rem;
+}
